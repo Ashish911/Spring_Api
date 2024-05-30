@@ -1,0 +1,17 @@
+spring:
+    profiles:
+        active: your-profile
+    datasource:
+        url: jdbc:postgresql://ep-shy-mode-a2m9jyuu.eu-central-1.aws.neon.tech/Spring_API?sslmode=require
+        username: NextAuth_owner
+        password: s1k9afGPLdOM
+        driver-class-name: org.postgresql.Driver
+    jpa:
+        hibernate:
+            ddl-auto: create-drop
+        show-sql: true
+        properties:
+          hibernate:
+              format_sql: true
+        database: postgresql
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
