@@ -16,7 +16,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
-import java.net.http.HttpHeaders;
 
 @Service
 @RequiredArgsConstructor
@@ -97,7 +96,7 @@ public class AuthenticationService {
             HttpServletRequest request,
             HttpServletResponse response
     ) throws IOException {
-        final String authHeader = request.getHeader(HttpHeaders.AUTHORIZATION);
+        final String authHeader = request.getHeader("Authorization");
         final String refreshToken;
         final String userEmail;
 

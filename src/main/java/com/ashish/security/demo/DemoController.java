@@ -11,6 +11,7 @@ public class DemoController {
 
     @GetMapping
     public ResponseEntity<String> sayHello() {
+        System.out.println("HERER");
         return ResponseEntity.ok("Hello World!");
     }
 
